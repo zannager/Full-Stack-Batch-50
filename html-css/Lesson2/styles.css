@@ -1,0 +1,7 @@
+/* Descendant selector space */
+div > p {
+    color: red;
+}
+p:nth-of-type(1) {
+    color: blue;
+}

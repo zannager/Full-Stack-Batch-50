@@ -1,0 +1,29 @@
+/* CSS element selector */
+p {
+    color: green;
+    font-size: 12px;
+}
+
+h1 {
+    color: blue;
+    font-size: 64px;
+    text-decoration: underline;
+}
+
+/* Class */
+.p2 {
+    color: red;
+}
+.p3 {
+    color: blueviolet;
+}
+
+/* ID */
+#p5 {
+    color: whitesmoke;
+    background-color: blue;
+}
+
+div p {
+color: maroon;
+}

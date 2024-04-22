@@ -1,0 +1,32 @@
+.container {
+    width: 500px;
+    height: 300px;
+    background-color: gray;
+    position: absolute;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.yellow {
+    background-color: yellow;
+    top: 0px;
+    left: 0px;
+}
+
+.cyan {
+    background-color: cyan;
+    top: 75px;
+    left: 25px;
+}
+
+.magenta {
+    background-color: magenta;
+    top: 150px;
+    left: 50px;
+}

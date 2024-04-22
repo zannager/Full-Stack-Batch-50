@@ -1,0 +1,28 @@
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+    position: abslute;
+    
+}
+
+.green {
+    background-color: green;
+    left: 0px;
+    position: relative;
+}
+
+.blue {
+    background-color: blue;
+    right: 0px;
+    position: fixed;
+    
+}
+
+span {
+    background-color: yellowgreen;
+    position: static;
+}

@@ -1,2 +1,4 @@
 # Full-Stack-Batch-50
-Full stack dev bootcamp
+<h1>Full stack dev bootcamp
+3-Month Intensive Training
+

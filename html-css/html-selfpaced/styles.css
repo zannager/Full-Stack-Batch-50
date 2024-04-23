@@ -1,0 +1,49 @@
+h2 {
+    background-color: red;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+.table1, .table1 th, .table1 td {
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.table2 {
+    background-color: aquamarine;
+}
+
+.table2,
+.table2 th,
+.table2 td {
+    /* background-color: aquamarine; */
+    border-collapse: collapse;
+    border: 1px dashed red;
+}
+
+.table2 tr:hover {
+    background-color: #3f118e !important;
+}
+
+.table3, .table3 th, .table3 td {
+    background-color: rgb(194, 188, 188);
+    border: 1px dotted violet;
+    border-collapse: collapse;
+    padding: 15px;
+    border-spacing: 30px;
+}
+
+.table4 tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+.table4 th:nth-child(even),.table4 td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+
+

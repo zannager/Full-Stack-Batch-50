@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>html intro</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
@@ -73,6 +74,330 @@
             both      spaces and
             line breaks
         </pre>
+
+        The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+        <h2>html style</h2>
+        <p>I am normal</p>
+        <p style="color:red;">I am red</p>
+        <p style="color:blue;">I am blue</p>
+        <p style="font-size:50px;">I am big</p>
+
+        <h2>html text formatting</h2>
+        <b>This text is bold</b>
+        <strong>This text is important!</strong><br>
+        <i>this is italic</i><br>
+        <em>this is emphasized</em><br>
+        <small>this is small text format</small>
+        <p>this is for the <mark>mark</mark> format</p>
+        <p>i am trying the <del>delete</del> element, and it should be replaced by <ins>insert</ins> element</p>
+        <p>this is for the <sub>subscripted</sub> element with a <sup>superscripted</sup> element</p>
+
+        <h2>html quotation and citation</h2>
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+        <p>the goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+        <p>the <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        <bdo dir="rtl">This text will be written from right to left</bdo>
+
+        <h2>html comments</h2>
+        <!-- <p>this is for the comments</p> -->
+
+        <h2>html colors</h2>
+        <h1 style="background-color:rgb(118, 146, 9);">...</h1>
+        <h1 style="background-color:#ebbfa4;">...</h1>
+        <h1 style="background-color:hsl(102, 100%, 64%);">...</h1>
+
+        <h1 style="background-color:rgba(243, 255, 71, 0.5);">...</h1>
+        <h1 style="background-color:hsla(303, 100%, 64%, 0.5);">...</h1>
+
+        <h2>html link</h2>
+        <a href="url">This is a url</a><br>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com!</a>
+        <h3>Absolute URLs</h3>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+
+        <h3>Relative URLs</h3>
+        <p><a href="html_images.asp">HTML Images</a></p>
+        <p><a href="/css/default.asp">CSS Tutorial</a></p><br>
+        <a href="default.asp"></a><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"><br>
+        <a href="mailto:someone@example.com">send email</a><br>
+
+        <button onclick="document.location='default.asp'">HTML Tutorial</button><br>
+        <span></span><button>Click Me</button><br>
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+        <h2>html images</h2>
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" bralt="Italian Trulli"><br>
+        <img src="images/img_chania.jpg" alt="Flowers in Chania" width="86px" height="139px">
+        <img src="images/programming.gif" alt="computer man" width="128px" height="71px">
+
+        <h2>html favicon</h2>
+        <h2>table</h2>
+        <table class="table1">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+        <table class="table2">
+            <tr>
+                <th>Data1</th>
+                <th>Data2</th>
+                <th>Data3</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Tobias</td>
+                <td>Linus</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>14</td>
+                <td>10</td>
+            </tr>
+        </table>
+
+        <table class="table3" style="width:100%">
+            <tr>
+              <th colspan="2">Firstname</th>
+              <th rowspan="2">Lastname</th>
+              <th>Age</th>
+            </tr>
+            <tr style="height:200px">
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+
+            <table class="table4">
+                <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Points</th>
+                </tr>
+                <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td>$100</td>
+                </tr>
+                <tr>
+                <td>Lois</td>
+                <td>Griffin</td>
+                <td>$150</td>
+                </tr>
+                <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td>$300</td>
+                </tr>
+                <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+                <td>$250</td>
+                </tr>
+              </table>
+
+        <h2>html list</h2>
+        unordered list
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        ordered list
+        <ol>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+
+        A Description List
+
+        <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+        </dl>
+
+        nested List
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ul>
+            </li>
+            <li>Milk
+                <ul>
+                    <li>fresh milk</li>
+                    <li>powdered milk
+                        <ul>
+                            <li>with sugar</li>
+                            <li>without sugar</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Juice</li>
+        </ul>
+
+        <h2>html block and inline elements</h2>
+        <p style="background-color: burlywood;">paragraph element</p>
+        <div style="background-color: antiquewhite;">div element</div>
+        <span style="background-color: chartreuse;">this is a span element</span>
+
+        <div style="background-color:black;color:white;padding:20px;">
+            <h3>London</h3>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </div> 
+
+        <h3>The span element</h3>
+
+        <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+        <h3>HTML DIV Example</h3>
+        <div style="background-color: yellowgreen;">
+            Lorem Ipsum <div style="color: antiquewhite;">I am a div</div> dolor sit amet.
+        </div>
+        
+
+        <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+
+        <p id="intro">Introduction</p>
+
+        <p><a href="#C4">Jump to Chapter 4</a></p>
+        <p><a href="#C10">Jump to Chapter 10</a></p>
+
+        <h3>Chapter 1</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 2</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 3</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3 id="C4">Chapter 4</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 5</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 6</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 7</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 8</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 9</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3 id="C10">Chapter 10</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 11</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 12</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 13</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 14</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 15</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 16</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 17</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 18</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 19</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 20</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 21</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 22</h3>
+        <p>This chapter explains ba bla bla</p>
+
+        <h3>Chapter 23</h3>
+        <p>This chapter explains ba bla bla</p>
+        <p><a href="#intro">back to Introduction</a></p>
+
+        <h2>html iframe</h2>
+        <p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+        <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+
+        <iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+        <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+        <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+        <h2>html javaScript</h2>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+            
+        <p id="demo"></p>
+        
+        <p id="sample">JavaScript can change the style of an HTML element.</p>
+
+        <script>
+        function myFunction() {
+        document.getElementById("sample").style.fontSize = "25px"; 
+        document.getElementById("sample").style.color = "red";
+        document.getElementById("sample").style.backgroundColor = "yellow";        
+        }
+        </script>
+
+        <button type="button" onclick="myFunction()">Click Me!</button>
 
     </body>
 </html>

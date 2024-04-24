@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>html intro</title>
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -398,6 +399,172 @@
         </script>
 
         <button type="button" onclick="myFunction()">Click Me!</button>
+
+        <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <script>
+        function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "/html-css/html-selfpaced/images/pic_bulboff.gif"
+        } else {
+            pic = "/html-css/html-selfpaced/images/on.gif"
+        }
+        document.getElementById('myImage').src = pic;
+        }
+        </script>
+
+        <img id="myImage" src="/html-css/html-selfpaced/images/pic_bulboff.gif" width="100" height="180">
+
+        <p>
+        <button type="button" onclick="light(1)">Light On</button>
+        <button type="button" onclick="light(0)">Light Off</button>
+        </p>
+
+        <h2>html filepath</h2>
+        <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+        <img src="../html-selfpaced/images/on.gif" alt="picture">
+
+        <h2>html layout</h2>
+        <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+        <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+        <header>
+        <h3>Cities</h3>
+        </header>
+
+        <section>
+        <nav>
+            <ul>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+        
+        <article>
+            <h1>London</h1>
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+        </section>
+
+        <footer>
+        <p>Footer</p>
+        </footer>
+        <br>
+        <h2>html computer code</h2>
+        <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+        </code><br>
+        x = 5;
+        y = 6;
+        z = x + y;
+        
+        <p>The kbd element is used to define keyboard input:</p>
+
+        <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+        <p>Message from my computer:</p>
+        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+        <h2>html semantic elements</h2>
+        <section>
+        <h3>WWF</h3>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+        </section>
+        
+        <section>
+        <h3>WWF's Panda symbol</h3>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section>
+
+        <article>
+        <h3>Google Chrome</h3>
+        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+        
+        <article>
+        <h3>Mozilla Firefox</h3>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        
+        <article>
+        <h3>Microsoft Edge</h3>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+
+        <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+        </nav>
+
+        <aside>
+        <h4>Epcot Center</h4>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside>
+
+        <h3>Places to Visit</h3>
+
+        <p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
+
+        <figure>
+        <img src="../html-selfpaced/images/img_chania.jpg" alt="Flowers" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        </figure>
+
+        <h2>html entities</h2>
+        <h3>HTML Special Character Example</h3>
+
+        <h4>An a with a grave accent: a&#768;</h4>
+        <h4>A space character: &nbsp;</h4>
+
+        <h2>html symbol</h2>
+        <p>I will display &euro;</p>
+        <h3>The copyright symbol: &copy;</h3>
+
+        <h2>html emojis</h2>
+        <h3>&#128507;</h3>
+        <p>&#128513;</p>
+        <p>I will display &#65; &#66; &#67;</p>
+
+        <h2>html forms</h2>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe">
+        </form>
+
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form><br>
+
+        <form>
+            <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+            <label for="vehicle1">I have a bike</label><br>
+            <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </form><br>
+
+        <form action="/action_page.php"></form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
 
     </body>
 </html>

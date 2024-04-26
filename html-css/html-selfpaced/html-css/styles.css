@@ -103,3 +103,10 @@ div.tree2 {
     background-position: right top;
     background-attachment: fixed;
 }
+
+div.shorthand {
+    background: blueviolet url(/html-css/html-selfpaced/html-css/images/img_tree.png) no-repeat scroll right top;
+}
+div.shorthand p, ul {
+    color: blue;
+}

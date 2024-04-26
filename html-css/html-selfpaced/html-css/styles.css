@@ -1,0 +1,105 @@
+/* * {
+    background-color: gray;
+} */
+
+p {
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#pid1 {
+    color: blue;
+}
+
+.pclass2 {
+    background-color: antiquewhite;
+}
+
+p.center {
+    background-color: aquamarine;
+}
+
+p.large {
+    font-size: 30px;
+    color: blueviolet;
+}
+
+h1, h2, p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* This is a comment */
+/* p {
+    background-color: brown;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+} */
+
+h4 {
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+p.lorem {
+    background-color: tomato;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+div {
+    background-color: green;
+}
+
+.first {
+    /* background-color: green !important; */
+    opacity: 0.1;
+}
+.second {
+    opacity: 0.3;
+}
+
+.third {
+    opacity: 0.6;
+}
+
+div.bgx {
+    background-image: url(/html-css/html-selfpaced/html-css/images/YY7j.gif);
+    background-repeat: repeat-x;
+    height: 200px;
+}
+
+div.bgy {
+    background-image: url(/html-css/html-selfpaced/html-css/images/YY7j.gif);
+    background-repeat: repeat-y;
+    height: 1000px;
+}
+
+div.bgnr {
+    background-image: url(/html-css/html-selfpaced/html-css/images/YY7j.gif);
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+div.tree {
+    background-image: url(/html-css/html-selfpaced/html-css/images/img_tree.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: scroll;
+}
+
+div.tree2 {
+    background-image: url(/html-css/html-selfpaced/html-css/images/img_tree.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}

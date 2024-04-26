@@ -110,3 +110,49 @@ div.shorthand {
 div.shorthand p, ul {
     color: blue;
 }
+
+.pdotted {
+    border: dotted blue;
+}
+
+.pdashed {
+    border: dashed blue;
+}
+
+.psolid {
+    border: solid blue;
+}
+
+.pdouble {
+    border: 3px double blue;
+}
+
+.pgroove {
+    border:  groove blue;
+}
+
+.pridge {
+    border:  ridge blue;
+}
+
+.pinset {
+    border: 3px inset blue;
+}
+
+.poutset {
+    border: 5px outset blue;
+}
+
+.pnone {
+    border: none;
+}
+
+.phidden {
+    border: hidden;
+}
+
+.pmixed {
+    border-style: dotted dashed solid double;
+    border-width: 5px;
+    border-color: blue;
+}

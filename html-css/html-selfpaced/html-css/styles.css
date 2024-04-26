@@ -141,6 +141,7 @@ div.shorthand p, ul {
 
 .poutset {
     border: 5px outset blue;
+    border-radius: 10px;
 }
 
 .pnone {

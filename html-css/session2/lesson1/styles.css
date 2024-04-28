@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row; /*defaul inline*/
+    /* flex-direction: column; display items in column */
+    flex-wrap: nowrap;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.flex-item {
+    width: 500px;
+    height: 50px;
+}

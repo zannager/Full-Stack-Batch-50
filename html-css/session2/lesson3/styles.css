@@ -1,8 +1,48 @@
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
 .grid-item {
     border: 1px gray solid;
+} */
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav content aside"
+    "footer footer footer";
+}
+
+.header, .nav, .aside, .content, .footer {
+    border: 1px gray solid;
+}
+
+.header {
+    grid-area: header;
+    height: 70px;
+}
+
+.nav {
+    grid-area: nav;
+
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.content {
+    grid-area: content;
+    height: calc(100vh - 170px);
+}
+
+.footer {
+    grid-area: footer;
+    height: 100px;
 }

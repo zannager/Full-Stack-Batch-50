@@ -17,7 +17,17 @@
     background-color: blue;
 }
 
+.cyan {
+    background-color: cyan;
+    flex-grow: 2;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
 .flex-item {
-    width: 500px;
+    /* width: 500px; */
     height: 50px;
+    
 }

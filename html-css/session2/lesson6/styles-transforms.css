@@ -16,5 +16,18 @@ body {
     /* transform: rotate(90deg); */
     /* transform: scale(10); */
     /* transform: skew(45deg); */
-    transform: rotateZ(115deg);
+    /* transform: rotateZ(115deg); */
+}
+
+.box:hover {
+    width: 200px;
+    opacity: 0.1;
+    background-color: red;
+    /* transition: width 2s;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: linear; */
+    /* transition-delay: 1s; */
+    transition: width 1s linear, opacity 1s ease-in-out;
+
 }

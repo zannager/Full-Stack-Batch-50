@@ -1,6 +1,6 @@
 header {
     border: 1px black solid;
-    height: 500px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -9,12 +9,15 @@ header {
     background-color: black;
     color: whitesmoke;
     height: 100%;
-    width: 30vw;
+    width: 20vw;
     position: absolute;
     left: 0;
     top: 0;
     margin: 0;
     padding-right: 0;
+    display: flex;
+    padding-left: 10vw;
+    font-size:20px;
 }
    
 .menu {
@@ -35,6 +38,83 @@ header {
     padding-left: 0;
 }
 
-.tagline {
-    float: left;
+#portfolio .tag1 {
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+}
+
+#portfolio .tag2 {
+    color: black;
+    background-color: yellow;
+    position: absolute;
+    top: 80%;
+    white-space: nowrap;
+}
+
+header #portfolio .tag1 {
+    font-size:55px;
+}
+
+.box {
+    height: 250px;
+    width: 400px;
+    background-image: radial-gradient(circle, rgb(63, 62, 62) 2px, transparent 6px); /* Increased spacing */
+    background-size: 45px 50px; /* Adjusted the size of the dots and spacing */
+    position: absolute;
+    top: 20%; 
+    left: 5%;
+}   
+
+header #portfolio .tag1 span {
+    font-size: 75px;
+    white-space: nowrap;
+}
+
+.image1 {
+    background-color: rgb(63, 60, 60);
+    height: calc(100vw - 10%);
+    width: calc(100vw - 30vw);
+    position: absolute;
+    margin: 0;
+    padding-left: 0;
+    top: 100vh - 10%;
+    right: 0;
+    z-index: -1;
+}
+
+.container1 {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#about {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    align-content: center;
+    margin-left: 50vw;
+}
+
+.image2 {
+    width: 350px;
+    height: 400px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 25vw;
+    transform: translate(-50%, -50%);
+}
+
+.image2-shadow {
+    width: 350px;
+    height: 400px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(25vw - 30px);
+    transform: translate(-50%, -50%);
+    z-index: -1    ;
 }

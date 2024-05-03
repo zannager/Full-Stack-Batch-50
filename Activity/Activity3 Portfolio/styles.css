@@ -56,7 +56,7 @@ header #portfolio .tag1 {
     font-size:55px;
 }
 
-.box {
+.dot-header {
     height: 250px;
     width: 400px;
     background-image: radial-gradient(circle, rgb(63, 62, 62) 2px, transparent 6px); /* Increased spacing */
@@ -96,6 +96,7 @@ header #portfolio .tag1 span {
     box-sizing: border-box;
     align-content: center;
     margin-left: 50vw;
+    margin-right: 15vw;
 }
 
 .image2 {
@@ -119,14 +120,74 @@ header #portfolio .tag1 span {
     z-index: -1    ;
 }
 
+.hello {
+    font-weight: bold;
+    text-align: right;
+}
+
+.hello b {
+    font-size: 30px;
+}
+
+.dot-container {
+    height: 95px;
+    width: 140px;
+    background-image: radial-gradient(circle, rgb(63, 62, 62) .1px, transparent 4px);
+    background-size: 10px 20px; 
+    position: absolute;
+    top: 73%; 
+    left: 27%;
+}   
+
+/* .wavy-container {
+    height: 50px;
+    width: 300px;
+    margin-top: 40px;
+    background:
+    linear-gradient(135deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(225deg, white 35%, transparent 25%) -25px 0,
+    linear-gradient(315deg, white 35%, transparent 25%),
+    linear-gradient(45deg, white 35%, transparent 25%);
+    background-size: 50px 50px;
+    background-color: black;
+} */
+
 .container2 {
     display: flex;
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    justify-content: center;
 }
 
-.work-menu, li {
+.work-header {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
 }
+
+.work-menu, .work-menu li {
+    display: flex;
+    gap: 100px;
+}
+
+.work-header h1,
+.work-header h4 {
+    margin-top: 0;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.box {
+    height: 400px;
+    background-color: gray;
+}
+
+
+

@@ -189,6 +189,6 @@ header #portfolio .tag1 span {
     background-color: gray;
 }
 
-#blog, #contact  {
-    justify-content: center;
+#blog h1, #contact h1 {
+    text-align: center;
 }

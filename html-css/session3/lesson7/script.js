@@ -15,6 +15,13 @@ function greetings(name) {
 }
 
 greetings("roy")
+
+function greetings(name) {
+    return `hello ${name}`;
+}
+
+console.log(greetings("greg"));
+
 let val = greetings("juan")
 console.log(val)
 

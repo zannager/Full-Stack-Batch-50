@@ -15,3 +15,10 @@ do {
     console.log("j = " + j);
     j++;
 } while (j < 5)
+
+//foreach
+let fruits = ["apple", "orange", "banana", "guava"]
+fruits.forEach(function(fruit) {
+    console.log(fruit)
+}
+)

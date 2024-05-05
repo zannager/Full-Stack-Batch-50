@@ -27,3 +27,16 @@ else if (b > a) {
 else {
     console.log("no condition above is true");
 }
+
+let answer = "a";
+
+switch (answer) {
+    case "a":
+        console.log("correct");
+        break;
+    case "b":
+        console.log("incorrect");
+        break;
+    default:
+        console.log("none of the above");
+}

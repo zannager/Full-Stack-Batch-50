@@ -19,10 +19,8 @@ let  x = 10;
 
 {  
 let y = 2;
-// Here x is 2
 }
 
-// Here x is 2
 function demo4() {
     return x;
 }

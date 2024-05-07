@@ -13,3 +13,17 @@ function printHelloWorld() {
 document.addEventListener("DOMContentLoaded", function() {
     printHelloWorld();
 });
+
+let  x = 10;
+// Here x is 10
+
+{  
+let y = 2;
+// Here x is 2
+}
+
+// Here x is 2
+function demo4() {
+    return x;
+}
+console.log("Value of x:", demo4());

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pokedex</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="filter-search">
+            <div>
+                <label for="pokemon-name">Name:</label>
+                <input type="text" name="pokemon-name" id="pokemon-name">
+            </div>
+            <div>
+                <label>Type:</label>
+                <select name="pokemon-type" id="pokemon-type">
+                    <option value="all">All</option>
+                    <option value="normal">Normal</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="earth">Earth</option>
+                    <option value="poison">Poison</option>
+                    <option value="grass">Grass</option>
+                    <option value="bug">Bug</option>
+                    <option value="flying">Flying</option>
+                </select>
+                <button id="search">Search</button>
+                <button id="clear">Clear</button>
+            </div>
+        </section>
+        <section>
+            <div id="grid-container">
+                <!-- insert div here -->
+                
+                <!-- <div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" alt="pokemon image">
+                    <h2>Ivysaur</h2>
+                    <p class="grass">Grass</p>
+                    <p class="poison">Poison</p>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

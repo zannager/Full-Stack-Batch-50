@@ -24,7 +24,7 @@
 // function demo4() {
 //     return x;
 // }
-console.log("Value of x:", demo4());
+// console.log("Value of x:", demo4());
 
 // Create an Array:
 const cars = ["Saab", "Volvo", "BMW"];

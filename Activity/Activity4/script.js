@@ -1,8 +1,8 @@
-fetch("https://pokeapi.co/api/v2/pokemon")
+fetch("https://pokeapi.co/api/v2/pokemon/ditto")
     .then(res => res.json())
     .then(data => {
         let pokemons = data.results;
-        // console.log(pokemons)
+        console.log(pokemons)
         pokemons.forEach(pokemon => { // pokemons here is an array. array can be looped using forEach
 
             // YOU CAN ACCESS POKEMON NAME HERE

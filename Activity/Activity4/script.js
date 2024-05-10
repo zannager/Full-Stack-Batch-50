@@ -103,20 +103,48 @@
         }
     
         // Function to render Pokemon data
+        // function renderPokemon(pokemonList) {
+        //     const gridContainer = document.getElementById("grid-container");
+        //     gridContainer.innerHTML = ""; // Clear previous Pokemon cards
+    
+        //     pokemonList.forEach((pokemon) => {
+        //         const pokemonName = pokemon.name;
+        //         const pokemonImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.url.split("/")[6]}.png`;
+    
+        //         const pokemonCard = document.createElement("div");
+        //         pokemonCard.innerHTML = `
+        //             <img src="${pokemonImageUrl}" alt="${pokemonName}">
+        //             <h2>${pokemonName}</h2>
+        //         `;
+        //         gridContainer.appendChild(pokemonCard);
+        //     });
+        // }
         function renderPokemon(pokemonList) {
             const gridContainer = document.getElementById("grid-container");
             gridContainer.innerHTML = ""; // Clear previous Pokemon cards
-    
+        
             pokemonList.forEach((pokemon) => {
                 const pokemonName = pokemon.name;
                 const pokemonImageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.url.split("/")[6]}.png`;
-    
-                const pokemonCard = document.createElement("div");
-                pokemonCard.innerHTML = `
-                    <img src="${pokemonImageUrl}" alt="${pokemonName}">
-                    <h2>${pokemonName}</h2>
-                `;
-                gridContainer.appendChild(pokemonCard);
+        
+                // Fetch additional details about the Pokémon
+                fetch(pokemon.url)
+                    .then(res => res.json())
+                    .then(pokemonData => {
+                        const pokemonTypes = pokemonData.types.map(type => type.type.name);
+                        const typeClasses = pokemonTypes.map(type => type.toLowerCase()).join(' ');
+                        
+                        const pokemonCard = document.createElement("div");
+                        pokemonCard.innerHTML = `
+                            <img src="${pokemonImageUrl}" alt="${pokemonName}">
+                            <h2>${pokemonName}</h2>
+                            <p class="${typeClasses}">${pokemonTypes.join(', ')}</p>
+                        `;
+                        gridContainer.appendChild(pokemonCard);
+                    })
+                    .catch(error => {
+                        console.error("Error fetching Pokemon details:", error);
+                    });
             });
         }
     });

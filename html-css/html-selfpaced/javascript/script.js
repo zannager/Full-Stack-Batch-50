@@ -43,3 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("demo6").innerHTML = car;
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    try {
+        adddlert("Welcome guest!");
+    } catch (error) {
+        document.getElementById("demo7").innerHTML = error.message;
+    }
+});

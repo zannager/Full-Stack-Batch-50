@@ -37,3 +37,9 @@ cars.push("Audi");
 
 // Display the Array:
 console.log(cars);
+
+document.addEventListener("DOMContentLoaded", function() {
+    let car = "Fiat";
+    document.getElementById("demo6").innerHTML = car;
+});
+

@@ -50,3 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("demo7").innerHTML = error.message;
     }
 });
+
+// x = 5; // Assign 5 to x
+
+// elem = document.getElementById("demo8"); // Find an element 
+// elem.innerHTML = x;           // Display x in the element
+
+// var x; // Declare x
+
+document.addEventListener('DOMContentLoaded', () => {
+    var x = 5; // Declare and assign x
+    var elem = document.getElementById("demo"); // Find an element 
+    if (elem) {
+        elem.innerHTML = x; // Display x in the element
+    } else {
+        console.error('Element not found');
+    }
+});

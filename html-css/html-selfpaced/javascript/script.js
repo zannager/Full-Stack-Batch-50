@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // var x; // Declare x
 
 document.addEventListener('DOMContentLoaded', () => {
-    var x = 5; // Declare and assign x
+    var x = 6; // Declare and assign x
     var elem = document.getElementById("demo"); // Find an element 
     if (elem) {
         elem.innerHTML = x; // Display x in the element

@@ -67,3 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Element not found');
     }
 });
+
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }

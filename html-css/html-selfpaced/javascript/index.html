@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <h2>my first javascript</h2>
@@ -37,6 +38,10 @@
         <input type="submit" value="Submit">
         </form>
 
+        <h2>Setting Text Content</h2>
+        <p id="01">Hello World!</p>
+        <p id="02">Hello Sweden!</p>
+
     <script>
     let hello = "";
 
@@ -45,6 +50,11 @@
     }
 
     document.getElementById("demo9").innerHTML = hello();
+
+    $(document).ready(function() {
+    var myElement = $("#01");
+    myElement.text("Hello Sweden!");
+    });
     </script>
 
     </body>

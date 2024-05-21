@@ -75,3 +75,12 @@ function validateForm() {
       return false;
     }
   }
+
+  function myFunction() {
+    const inpObj = document.getElementById("id1");
+    if (!inpObj.checkValidity()) {
+      document.getElementById("demo10").innerHTML = inpObj.validationMessage;
+    } else {
+      document.getElementById("demo10").innerHTML = "Input OK";
+    } 
+  } 

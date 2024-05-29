@@ -42,4 +42,3 @@ let book = {title: "the book", author: "booker"};
 for (let p in book) {
     console.log(p);
 }
-book.valueOf();

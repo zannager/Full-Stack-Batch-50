@@ -42,3 +42,7 @@ let book = {title: "the book", author: "booker"};
 for (let p in book) {
     console.log(p);
 }
+let myarray = [];
+myarray[0] = "zero";
+myarray[1] = true;
+myarray[2] = 5;

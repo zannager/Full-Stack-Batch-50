@@ -37,3 +37,9 @@ function add_all(arr) {
     });
     return sum;
 }
+
+let book = {title: "the book", author: "booker"};
+for (let p in book) {
+    console.log(p);
+}
+book.valueOf();

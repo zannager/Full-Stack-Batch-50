@@ -31,14 +31,30 @@
 
 // greeting('goodmorning');
 
-let createBlog = (title, body) => {
-    if(!title) {
-        throw new Error('a title is required');
+// let createBlog = (title, body) => {
+//     if(!title) {
+//         throw new Error('a title is required');
+//     }
+//     if(!body) {
+//         throw new Error('body cant be empty');
+//     }
+//     return  alert(`${title} - ${body}`);
+// }
+
+// createBlog('blog title', 'blog body');
+
+let nepal = {
+    //add property
+    mountains: ['everest', 'fish tail', 'annaputa'],
+    //add method
+    // printWithDash: function() {
+    //     setTimeout(function(){
+    //         console.log(this.mountains.join(" - "))
+    //     }, 3000);
+    printWithDash: function() {
+        setTimeout(() => console.log(this.mountains.join(' - ')), 3000);
     }
-    if(!body) {
-        throw new Error('body cant be empty');
-    }
-    return  alert(`${title} - ${body}`);
 }
 
-createBlog('blog title', 'blog body');
+// alert(nepal.mountains);
+nepal.printWithDash();

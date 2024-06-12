@@ -43,18 +43,44 @@
 
 // createBlog('blog title', 'blog body');
 
-let nepal = {
-    //add property
-    mountains: ['everest', 'fish tail', 'annaputa'],
-    //add method
-    // printWithDash: function() {
-    //     setTimeout(function(){
-    //         console.log(this.mountains.join(" - "))
-    //     }, 3000);
-    printWithDash: function() {
-        setTimeout(() => console.log(this.mountains.join(' - ')), 3000);
-    }
-}
+// let nepal = {
+//     //add property
+//     mountains: ['everest', 'fish tail', 'annaputa'],
+//     //add method
+//     // printWithDash: function() {
+//     //     setTimeout(function(){
+//     //         console.log(this.mountains.join(" - "))
+//     //     }, 3000);
+//     printWithDash: function() {
+//         setTimeout(() => console.log(this.mountains.join(' - ')), 3000);
+//     }
+// }
 
-// alert(nepal.mountains);
-nepal.printWithDash();
+// // alert(nepal.mountains);
+// nepal.printWithDash();
+
+//desctructuring
+// let thingsToDo = {
+//     morning: 'exercise',
+//     afternoon: 'work',
+//     evening: 'code',
+//     night: ['sleep', 'dream']
+// }
+
+// let {morning, afternoon} = thingsToDo;
+// morning = 'run';
+// console.log(morning, ' - ', afternoon);
+
+// let uniStudent = (student) => {
+//     // console.log(`${student.name} from ${student.university}`)
+//     let {name, university} = student;
+//     console.log(`${name} from ${university}`)
+// }
+
+let uniStudent = ({name, university}) => {
+    console.log(`${name} from ${university}`)
+}
+uniStudent({
+    name: 'ryan',
+    university: 'university of baguio'
+})

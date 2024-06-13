@@ -109,30 +109,76 @@
 // };
 // adventureClimbing.output();
 
-//spread operators
-var mountains = ['everest', 'fist tail', 'annapura'];
-var mountainsFromJapan = ['fuji'];
+// //spread operators
+// var mountains = ['everest', 'fist tail', 'annapura'];
+// var mountainsFromJapan = ['fuji'];
 
-var allMountains = [...mountains, ...mountainsFromJapan];
-console.log(allMountains);
+// var allMountains = [...mountains, ...mountainsFromJapan];
+// console.log(allMountains);
 
-var day = {
-    breakfast: 'toast with milk',
-    lunch: 'rice with chicke curry'
+// var day = {
+//     breakfast: 'toast with milk',
+//     lunch: 'rice with chicke curry'
+// }
+
+// var night = {
+//     dinner: 'noodle'
+// }
+
+// var wholeDay = {...day, ...night};
+
+// console.log(wholeDay);
+
+// //rest operators
+
+// var rivers = ['sunksi', 'tankosi', 'saptosk'];
+// var [first, ...rest] = rivers;
+
+// console.log(first);
+// console.log(rest);
+
+
+//classes
+
+// function Holiday(destination, days) {
+//     this.destination = destination
+//     this.days = days
+// }
+
+// // Holiday.prototype.info = function() {
+// //     console.log(this.destination + " I " + this.days + " days");
+// // }
+
+// var nepal = new Holiday('nepal', 30);
+// // console.log(nepal.info())
+
+// //or in ES6
+
+
+class Holiday { //parent class
+    constructor(destination, days) {
+        this.destination = destination
+        this.days = days
+    }
+
+    info() {
+        console.log(`${this.destination} will take ${this.days} days`)
+    }
+}
+const trip = new Holiday('nepal', '30');
+console.log(trip.info());
+
+class Expedition extends Holiday {//sub class
+    constructor(destination, days, gear) {
+        super(destination, days);
+        this.gear = gear;
+    }
+
+    info() {
+        super.info();
+        console.log(`bring your ${this.gear.join(' and your')}`);
+    }
 }
 
-var night = {
-    dinner: 'noodle'
-}
-
-var wholeDay = {...day, ...night};
-
-console.log(wholeDay);
-
-//rest operators
-
-var rivers = ['sunksi', 'tankosi', 'saptosk'];
-var [first, ...rest] = rivers;
-
-console.log(first);
-console.log(rest);
+const tripWithGear = new Expedition('everest', 30, ['sunglases', 'flags', 'camera']);
+tripWithGear.info();

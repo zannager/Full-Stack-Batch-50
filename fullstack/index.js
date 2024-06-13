@@ -100,11 +100,39 @@
 
 
 
-var adventureClimbing = {
-    name: 'everest',
-    height: 8848,
-    output() {
-    console.log(`Mt. ${this.name} is ${this.height} meter tall`)
+// var adventureClimbing = {
+//     name: 'everest',
+//     height: 8848,
+//     output() {
+//     console.log(`Mt. ${this.name} is ${this.height} meter tall`)
+// }
+// };
+// adventureClimbing.output();
+
+//spread operators
+var mountains = ['everest', 'fist tail', 'annapura'];
+var mountainsFromJapan = ['fuji'];
+
+var allMountains = [...mountains, ...mountainsFromJapan];
+console.log(allMountains);
+
+var day = {
+    breakfast: 'toast with milk',
+    lunch: 'rice with chicke curry'
 }
-};
-adventureClimbing.output();
+
+var night = {
+    dinner: 'noodle'
+}
+
+var wholeDay = {...day, ...night};
+
+console.log(wholeDay);
+
+//rest operators
+
+var rivers = ['sunksi', 'tankosi', 'saptosk'];
+var [first, ...rest] = rivers;
+
+console.log(first);
+console.log(rest);
